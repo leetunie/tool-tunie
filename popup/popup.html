@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Useful Script</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="./libs/swal2.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="themes/default.less" />
+    <script src="libs/less.js"></script>
+</head>
+
+<body>
+    <div class="popup-header">Useful Scripts</div>
+    <h3>
+        <a data-track="donate" target="_blank" href="https://hoangtran0410.github.io/HoangTran0410/DONATE">
+            <i class="fa-solid fa-mug-saucer"></i> donate
+        </a>
+        <a data-track="github" target="_blank" href="https://github.com/Useful-Scripts-Extension/useful-script">
+            <i class="fa-solid fa-code"></i> source code
+        </a>
+        <a data-track="fanpage" target="_blank" href="https://www.facebook.com/groups/1154059318582088">
+            <b><i class="fa-solid fa-arrow-up-right-from-square"></i> Fanpage</b>
+        </a>
+        <br />
+        <span id="version"></span>
+        <button id="update-btn" class="rainbow-bg">(update)</button>
+        <p>Make with <i class="fa-solid fa-heart fa-beat" style="color:#ff0000a3"></i>
+            by <a data-track="author" target="_blank" href="https://github.com/HoangTran0410">Hoang Tran</a>
+        </p>
+    </h3>
+
+    <!-- Tab links -->
+    <div class="tab">
+    </div>
+
+    <!-- Tab search -->
+    <div class="search">
+        <input type="text" placeholder="Search..." />
+        <span class="searchFound"></span>
+    </div>
+
+    <!-- Tab content -->
+    <div class="content">
+    </div>
+
+    <!-- settings -->
+    <div class="settings" data-tooltip="Settings" data-flow="left">
+        <i class="fa-solid fa-gear fa-lg"></i>
+    </div>
+
+    <!-- open-in-newtab -->
+    <div class="open-in-newtab" data-tooltip="Open in new tab" data-flow="right">
+        <i class="fa-solid fa-up-right-from-square fa-lg"></i>
+    </div>
+
+    <!-- modal -->
+    <div id="myModal" class="modal hide">
+        <!-- Modal content -->
+        <div class="content">
+            <span class="close">&times;</span>
+            <h3 class="title">Modal Title</h3>
+            <div class="body">Some text in the Modal..</div>
+        </div>
+    </div>
+
+    <!-- loading fullscreen -->
+    <div id="loading-fullscreen" class="loading-container">
+        <div class="loader"></div>
+        <p class="text">Please wait. Loading all scripts...</p>
+    </div>
+
+    <!-- scroll to top -->
+    <div id="scroll-to-top" class="hide" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up fa-lg"></i>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

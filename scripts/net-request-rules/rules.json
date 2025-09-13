@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://unshorten.it/"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://unshorten.it/"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://unshorten.it/main/get_long_url",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://snaptik.app"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://snaptik.app"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://snaptik.app/abc2.php",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://www.facebook.com"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://www.facebook.com"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://www.facebook.com",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://www.instagram.com"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://www.instagram.com"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://www.instagram.com",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://www.tiktok.com/"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://www.tiktok.com"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://*.tiktok.com/*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://savevideo.me/en/"
+        },
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://savevideo.me"
+        }
+      ]
+    },
+    "condition": {
+      "domain": "extension://*",
+      "urlFilter": "https://savevideo.me/*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
